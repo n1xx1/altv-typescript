@@ -1,0 +1,29 @@
+{
+  "name": "altv-typescript",
+  "version": "0.0.1",
+  "description": "Alt:V typescript utilities",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    
+    "version": "git add -A src",
+    "prepare": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n1xx1/altv-typescript.git"
+  },
+  "files": ["lib/**/*"],
+  "keywords": ["altv", "typescript"],
+  "author": "n1xx1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n1xx1/altv-typescript/issues"
+  },
+  "homepage": "https://github.com/n1xx1/altv-typescript#readme",
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
+}
